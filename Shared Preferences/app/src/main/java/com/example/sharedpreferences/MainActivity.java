@@ -13,7 +13,7 @@ public class MainActivity extends Activity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        final EditText editText = findViewById(R.id.edit_text);
+        final EditText editText = findViewById(R.id.ed1);
         Button button = findViewById(R.id.button);
         button.setOnClickListener(new View.OnClickListener() {
             @Override
