@@ -43,9 +43,9 @@ public class MainActivity extends Activity{
     }
     @Override
     protected void onDestroy(){
-        super.onDestroy();
         Toast toast = Toast.makeText(getApplicationContext(), "Destroyed", Toast.LENGTH_SHORT);
         toast.show();
+        super.onDestroy();
     }
 
 
