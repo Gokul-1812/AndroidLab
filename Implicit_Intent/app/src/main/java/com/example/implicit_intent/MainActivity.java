@@ -15,6 +15,7 @@ public class MainActivity extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         Button button = findViewById(R.id.button);
+        Button button2 = findViewById(R.id.button2);
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -22,7 +23,24 @@ public class MainActivity extends Activity {
                 Intent mapint = new Intent(Intent.ACTION_VIEW, Uri.parse("geo:9.985017, 76.724802"));
                 startActivity(mapint);
 
+
+
             }
-        });
+
+        }
+        );
+        button2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                Intent intent = new Intent(Intent.ACTION_SENDTO);
+                intent.setData(Uri.parse("mailto:")); // only email apps should handle this
+                intent.putExtra(Intent.EXTRA_EMAIL, "gokulvsnair@gmail.com");
+                intent.putExtra(Intent.EXTRA_SUBJECT, "Test mail");
+                startActivity(intent);
+
+            }
+        }
+        );
     }
 }
