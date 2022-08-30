@@ -10,7 +10,7 @@
     <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/enter_name"
+        android:hint="@string/enter_name"
         android:id="@+id/name"
         android:textAlignment="center"
      />
@@ -26,28 +26,29 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_margin="20dp"
-            android:text="Physics"
+            android:hint="Physics"
             android:id="@+id/phy"
             />
         <EditText
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_margin="55dp"
-            android:text="Maths"
+            android:hint="Maths"
             android:id="@+id/maths"
             />
         <EditText
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_margin="20dp"
-            android:text="Chemistry"
+            android:hint="Chemistry"
             android:id="@+id/chem"
             />
     </LinearLayout>
     <Button
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Calculate"
+        android:textStyle="bold"
         android:id="@+id/calbutton"
 
         />
