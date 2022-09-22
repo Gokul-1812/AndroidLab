@@ -11,24 +11,45 @@
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="80dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
         android:layout_marginBottom="80dp"
-        >
+        android:background="@drawable/shape">
 
         <TextView
-            android:layout_width="300dp"
-            android:layout_height="match_parent"
-            android:layout_marginLeft="20dp"
-            android:background="@drawable/shape" />
+            android:id="@+id/text_dis1"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:background="#97B1B5D3"
+            android:text=""
+            android:textSize="20dp" />
 
-        <Button
-            android:layout_width="50dp"
-            android:layout_height="match_parent"
-            android:layout_marginLeft="10dp"
-            android:text="C"
-            android:backgroundTint="@color/darkgrey"
-            android:textSize="30dp"/>
+        <TextView
+            android:id="@+id/text_dis2"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="#6F7BA8A3"
+            android:text=""
+            android:textSize="30dp" />
     </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="end"
+        >
+        <Button
+            android:layout_width="110dp"
+            android:layout_height="55dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="33dp"
+            android:text="AC"
+            android:backgroundTint="@color/orange"
+
+            android:onClick="clearAll"/>
+
+    </LinearLayout>
+
+
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -42,7 +63,8 @@
             android:layout_marginTop="10dp"
             android:text="1"
             android:backgroundTint="@color/grey"
-            android:textSize="30dp" />
+            android:textSize="30dp"
+            android:onClick="getNumber"/>
 
         <Button
             android:layout_width="50dp"
@@ -51,7 +73,8 @@
             android:layout_marginTop="10dp"
             android:text="2"
             android:backgroundTint="@color/grey"
-            android:textSize="30dp" />
+            android:textSize="30dp"
+            android:onClick="getNumber"/>
 
         <Button
             android:layout_width="50dp"
@@ -60,7 +83,8 @@
             android:layout_marginTop="10dp"
             android:text="3"
             android:backgroundTint="@color/grey"
-            android:textSize="30dp" />
+            android:textSize="30dp"
+            android:onClick="getNumber"/>
 
         <Button
             android:layout_width="110dp"
@@ -69,7 +93,8 @@
             android:layout_marginTop="10dp"
             android:text="+"
             android:backgroundTint="@color/darkgrey"
-            android:textSize="30dp" />
+            android:textSize="30dp"
+            android:onClick="getSymbol"/>
 
     </LinearLayout>
 
@@ -83,7 +108,8 @@
             android:layout_marginLeft="30dp"
             android:text="4"
             android:backgroundTint="@color/grey"
-            android:textSize="30dp"/>
+            android:textSize="30dp"
+            android:onClick="getNumber"/>
         <Button
             android:layout_width="50dp"
             android:layout_height="55dp"
@@ -91,7 +117,8 @@
             android:layout_marginLeft="30dp"
             android:text="5"
             android:backgroundTint="@color/grey"
-            android:textSize="30dp"/>
+            android:textSize="30dp"
+            android:onClick="getNumber"/>
         <Button
             android:layout_width="50dp"
             android:layout_height="55dp"
@@ -99,7 +126,8 @@
             android:layout_marginLeft="30dp"
             android:text="6"
             android:backgroundTint="@color/grey"
-            android:textSize="30dp"/>
+            android:textSize="30dp"
+            android:onClick="getNumber"/>
         <Button
             android:layout_width="110dp"
             android:layout_height="55dp"
@@ -107,7 +135,8 @@
             android:layout_marginLeft="30dp"
             android:text="-"
             android:backgroundTint="@color/darkgrey"
-            android:textSize="30dp"/>
+            android:textSize="30dp"
+            android:onClick="getSymbol"/>
     </LinearLayout>
     <LinearLayout
         android:layout_width="match_parent"
@@ -119,7 +148,8 @@
             android:layout_marginLeft="30dp"
             android:text="7"
             android:backgroundTint="@color/grey"
-            android:textSize="30dp"/>
+            android:textSize="30dp"
+            android:onClick="getNumber"/>
         <Button
             android:layout_width="50dp"
             android:layout_height="55dp"
@@ -127,7 +157,8 @@
             android:layout_marginLeft="30dp"
             android:text="8"
             android:backgroundTint="@color/grey"
-            android:textSize="30dp"/>
+            android:textSize="30dp"
+            android:onClick="getNumber"/>
         <Button
             android:layout_width="50dp"
             android:layout_height="55dp"
@@ -135,15 +166,17 @@
             android:layout_marginLeft="30dp"
             android:text="9"
             android:backgroundTint="@color/grey"
-            android:textSize="30dp"/>
+            android:textSize="30dp"
+            android:onClick="getNumber"/>
         <Button
             android:layout_width="110dp"
             android:layout_height="55dp"
             android:layout_marginTop="10dp"
             android:layout_marginLeft="30dp"
-            android:text="*"
+            android:text="x"
             android:backgroundTint="@color/darkgrey"
-            android:textSize="30dp"/>
+            android:textSize="30dp"
+            android:onClick="getSymbol"/>
     </LinearLayout>
     <LinearLayout
         android:layout_width="match_parent"
@@ -155,7 +188,8 @@
             android:layout_marginLeft="30dp"
             android:text="."
             android:backgroundTint="@color/grey"
-            android:textSize="30dp"/>
+            android:textSize="30dp"
+            android:onClick="getSymbol"/>
         <Button
             android:layout_width="50dp"
             android:layout_height="55dp"
@@ -163,7 +197,8 @@
             android:layout_marginLeft="30dp"
             android:text="0"
             android:backgroundTint="@color/grey"
-            android:textSize="30dp"/>
+            android:textSize="30dp"
+            android:onClick="getNumber"/>
         <Button
             android:layout_width="50dp"
             android:layout_height="55dp"
@@ -171,7 +206,8 @@
             android:layout_marginLeft="30dp"
             android:text="="
             android:backgroundTint="@color/orange"
-            android:textSize="30dp"/>
+            android:textSize="30dp"
+            android:onClick="doCalculation"/>
         <Button
             android:layout_width="110dp"
             android:layout_height="55dp"
@@ -179,6 +215,7 @@
             android:layout_marginLeft="30dp"
             android:text="/"
             android:backgroundTint="@color/darkgrey"
+            android:onClick="getSymbol"
             android:textSize="30dp"/>
     </LinearLayout>
 

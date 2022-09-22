@@ -25,7 +25,7 @@ public class StatusActivity extends AppCompatActivity {
                 percentage.setText("Percentage: " + p + "%");
                 markView.setText("Mark: " + mark);
 
-                if (p > 50)
+                if (p > 40)
                     status.setText(name + "Passed!!");
 
                 else
