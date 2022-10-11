@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/fb"
+        android:layout_alignLeft="@id/fb"
+        android:layout_alignRight="@id/fb"
+        android:text="facebook"
+        android:textSize="35dp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:padding="15dp"
+        android:layout_marginTop="40dp"
+        android:textColor="#1778F2"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_marginBottom="20dp"/>
+
+    <TextView
+        android:id="@+id/em"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/fb"
+        android:layout_marginLeft="45dp"
+        android:layout_marginBottom="20dp"
+        android:text="Email:"
+        android:textSize="23dp"
+        android:textColor="@color/black">
+
+    </TextView>
+
+    <EditText
+        android:id="@+id/ema"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_below="@id/em"
+        android:layout_marginLeft="45dp"
+        android:layout_marginRight="45dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/shape">
+
+    </EditText>
+    <TextView
+        android:id="@+id/pass"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ema"
+        android:layout_marginLeft="45dp"
+        android:layout_marginBottom="20dp"
+        android:text="Password"
+        android:textSize="23dp"
+        android:textColor="@color/black">
+
+    </TextView>
+
+    <EditText
+        android:id="@+id/passa"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_below="@id/pass"
+        android:background="@drawable/shape"
+        android:layout_marginLeft="45dp"
+        android:layout_marginRight="45dp"
+        android:layout_marginBottom="30dp"
+        >
+
+    </EditText>
+    <CheckBox
+        android:id="@+id/save"
+        android:text="Save Login"
+        android:textSize="20dp"
+        android:layout_marginLeft="45dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/passa"
+        android:layout_marginBottom="30dp"
+
+        >
+
+    </CheckBox>
+
+    <Button
+        android:id="@+id/log"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/save"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="75dp"
+        android:layout_marginRight="75dp"
+        android:layout_marginBottom="20dp"
+        android:backgroundTint="#1778F2"
+        android:text="Login">
+
+    </Button>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/log"
+        android:gravity="center"
+        android:textSize="20dp"
+        android:text="Need an Account? Sign up">
+    </TextView>
+
+
+
+
+
+
+
+</RelativeLayout>
