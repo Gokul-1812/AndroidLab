@@ -24,13 +24,7 @@ public class MainActivity extends Activity implements View.OnClickListener {
 
     }
 
-//    public void verify(View view) {
-//
-//
-//
-//
-//
-//    }
+
 
     @Override
     public void onClick(View view) {

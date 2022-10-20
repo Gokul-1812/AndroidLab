@@ -49,9 +49,9 @@ public class MainActivity extends AppCompatActivity {
         Button home = findViewById(R.id.home);
 
         start.setOnClickListener(new View.OnClickListener() {
-                                     @Override
-                                     public void onClick(View v) {
-                                         setContentView(R.layout.quiz_activity);
+            @Override
+            public void onClick(View v) {
+                setContentView(R.layout.quiz_activity);
                 Button next = findViewById(R.id.ne);
                 Button prev = findViewById(R.id.pre);
                 TextView quest_no = (TextView) findViewById(R.id.question_no);
