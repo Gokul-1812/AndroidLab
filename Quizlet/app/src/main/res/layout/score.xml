@@ -10,9 +10,22 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:fontFamily="monospace"
-        android:text="Score: "
-        android:textSize="45dp">
+        android:text="Score:"
+        android:textSize="45dp"
+        >
 
     </TextView>
+    <Button
+        android:id="@+id/home"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Home"
+        android:layout_marginTop="60dp"
+        android:textSize="15dp"
+
+
+        >
+
+    </Button>
 
 </LinearLayout>

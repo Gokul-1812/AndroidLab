@@ -16,7 +16,8 @@ public class MainActivity extends AppCompatActivity {
     {
         question = new String[]{"What is the colour of a polar bear’s skin?",
                 "Which of the following is the only bird species that can fly backwards?",
-                "Which animal is featured on the logo of the World Wild Fund?"};
+                "Which animal is featured on the logo of the World Wild Fund?"
+        };
     }
     String[] question_no;
     {
@@ -45,11 +46,12 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         Button start = findViewById(R.id.start);
+        Button home = findViewById(R.id.home);
 
         start.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                setContentView(R.layout.quiz_activity);
+                                     @Override
+                                     public void onClick(View v) {
+                                         setContentView(R.layout.quiz_activity);
                 Button next = findViewById(R.id.ne);
                 Button prev = findViewById(R.id.pre);
                 TextView quest_no = (TextView) findViewById(R.id.question_no);
@@ -74,6 +76,13 @@ public class MainActivity extends AppCompatActivity {
                             setContentView(R.layout.score);
                             TextView score = (TextView) findViewById(R.id.sc);
                             score.setText("Score: "+scor);
+//                            home.setOnClickListener(new View.OnClickListener() {
+//                                @Override
+//                                public void onClick(View v) {
+//                                    setContentView(R.layout.activity_main);
+//                                }
+//                            }
+//                            );
                             return;
                         }
                         quest.setText(question[counter]);
