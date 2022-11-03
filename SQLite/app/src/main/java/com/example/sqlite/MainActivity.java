@@ -168,7 +168,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
         public void onCreate(SQLiteDatabase db) {
             try {
-                //db.execSQL("CREATE TABLE DEPT (deptid INTEGER PRIMARY KEY AUTOINCREMENT, name VARCHAR(30), location VARCHAR(10));");
+                db.execSQL("CREATE TABLE DEPT (deptid INTEGER PRIMARY KEY AUTOINCREMENT, name VARCHAR(30), location VARCHAR(10));");
             } catch (SQLException e) {
             }
         }
