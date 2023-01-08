@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Second">
+
+    <TextView
+        android:id="@+id/fq"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="38dp"
+        android:fontFamily="@font/alegreya_sans_sc"
+        android:textSize="30dp"
+        android:text="dtteu"
+        />
+    <Button
+        android:id="@+id/map"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="50dp"
+        android:text="Open Map"
+        android:backgroundTint="@color/darkgreen"
+        />
+    <Button
+        android:id="@+id/list"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="50dp"
+        android:text="Open List"
+        android:backgroundTint="@color/darkgreen"
+        />
+    <Button
+        android:id="@+id/spinner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="50dp"
+        android:text="Open Spinner"
+        android:backgroundTint="@color/darkgreen"
+        />
+
+</LinearLayout>
